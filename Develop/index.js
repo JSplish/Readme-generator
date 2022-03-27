@@ -2,12 +2,11 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
-const util = require('util');
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
-// TODO: Create an array of questions for user input
-const questions = [
+const questions = () => {
+  return inquirer.prompt([
     {
       type: 'input',
       name: 'name',
@@ -116,8 +115,8 @@ const questions = [
       type: 'input',
       name: 'email',
       message: 'What is your email address? (Required)',
-      validate: nameInput => { //emailInput??
-        if (nameInput) { //emailInput??
+      validate: emailInput => { 
+        if (emailInput) { 
           return true;
         } else {
           console.log('Please enter your email.');
@@ -134,15 +133,29 @@ const questions = [
       type: 'checkbox',
       name: 'licensing',
       message: 'Select the following licenses used for the project (Multiple options may be selected)',
-      choices: ['Apache', 'MIT', 'Mozilla-Public', 'GNU-General-Public', 'Common-Development-and Distribution', 'None'],
+      choices: ['Apache', 'MIT', 'Mozilla-Public', 'GNU-General-Public', 'IBM', 'None'],
     }
-  ];
+  
+  ])};
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+const writeToFile = data => {
+  fs.writeToFile("README.md", data, error => {
+    if (error) {
+      console.log(error);
+      return; 
+    } else {
+      console.log("README had been generated successfully")
+    }
+  })
+};
 
 // TODO: Create a function to initialize app
-function init() {}
+async function init() {
+  const feedback = await questions();
+  const markdown = generateMarkdown(feedback);
+  writeToFile(markdown);
+};
 
 // Function call to initialize app
 init();
