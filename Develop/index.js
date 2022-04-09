@@ -133,7 +133,7 @@ const questions = () => {
       type: 'checkbox',
       name: 'licensing',
       message: 'Select the following licenses used for the project (Multiple options may be selected)',
-      choices: ['Apache', 'MIT', 'Mozilla-Public', 'GNU-General-Public', 'IBM', 'None'],
+      choices: ['Apache', 'MIT', 'Mozilla-Public', 'GNU-General-Public', 'IBM', 'None']
     }
   
   ])};
