@@ -1,9 +1,9 @@
-# af
+# README Generator
 
   ![License](https://img.shields.io/badge/license-undefined-brightgreen)
 
   ## DESCRIPTION
-  asf
+  This will create at professional README using node and inquirer
 
   ## TABLE OF CONTENTS
   [Installation](#installation)  
@@ -14,22 +14,22 @@
   [Questions](#questions)
   
   ## INSTALLATION
-  asf
+  you will need to install node and inquirer in order to access and use this correctly
 
   ## USAGE
-  asf
+  https://drive.google.com/file/d/1fOO75_7sOd7CX2LlIIvgWqaemRawyBAk/view
 
   ## CONTRIBUTING
-  asf
+  Myself, Jordan Edginton
 
   ## TESTS
-  asf
+  
 
   ## LICENSE
-  License for the project is: Apache
+  License for the project is: MIT
   undefined
 
   ## QUESTIONS
-  GITHUB: https://github.com/asf
-  EMAIL: asf
+  GITHUB: https://github.com/JSplish
+  EMAIL: example@example.com
 
