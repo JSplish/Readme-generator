@@ -1,9 +1,9 @@
-# note-taker
+# readme-generator
 
   ![License](https://img.shields.io/badge/license-undefined-brightgreen)
 
   ## DESCRIPTION
-  Use this to takes notes as needed and delete as needed.
+  The README generator will prompt you with questions to provide you with a quality and professional README.
 
   ## TABLE OF CONTENTS
   [Installation](#installation)  
@@ -14,10 +14,10 @@
   [Questions](#questions)
   
   ## INSTALLATION
-  none
+  Use node.js and inquirer
 
   ## USAGE
-  none
+  https://drive.google.com/file/d/1fOO75_7sOd7CX2LlIIvgWqaemRawyBAk/view
 
   ## CONTRIBUTING
   Jordan Edginton
